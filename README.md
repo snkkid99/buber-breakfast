@@ -1,8 +1,21 @@
+# Video
+
+https://www.youtube.com/watch?v=PmDJIooZjBE
+
+# Cmd dotnet
+
+dotnet build
+dotnet run --project .\BuberBreakfast\
+
+# Extention
+
+REST Client
+
 <div align="center">
 
 <img src="assets/BuberBreakfastUiUx.png" alt="drawing" width="1000"/>
 
- [![GitHub Stars](https://img.shields.io/github/stars/amantinband/buber-breakfast.svg)](https://github.com/amantinband/buber-breakfast/stargazers) [![GitHub license](https://img.shields.io/github/license/amantinband/buber-breakfast)](https://github.com/amantinband/buber-breakfast/blob/main/LICENSE)
+[![GitHub Stars](https://img.shields.io/github/stars/amantinband/buber-breakfast.svg)](https://github.com/amantinband/buber-breakfast/stargazers) [![GitHub license](https://img.shields.io/github/license/amantinband/buber-breakfast)](https://github.com/amantinband/buber-breakfast/blob/main/LICENSE)
 
 ---
 
@@ -75,30 +88,22 @@ Simply `git clone https://github.com/amantinband/buber-breakfast` and `dotnet ru
 
 # API Definition
 
-
 ## Create Breakfast
 
 ### Create Breakfast Request
 
 ```js
-POST /breakfasts
+POST / breakfasts;
 ```
 
 ```json
 {
-    "name": "Vegan Sunshine",
-    "description": "Vegan everything! Join us for a healthy breakfast..",
-    "startDateTime": "2022-04-08T08:00:00",
-    "endDateTime": "2022-04-08T11:00:00",
-    "savory": [
-        "Oatmeal",
-        "Avocado Toast",
-        "Omelette",
-        "Salad"
-    ],
-    "Sweet": [
-        "Cookie"
-    ]
+  "name": "Vegan Sunshine",
+  "description": "Vegan everything! Join us for a healthy breakfast..",
+  "startDateTime": "2022-04-08T08:00:00",
+  "endDateTime": "2022-04-08T11:00:00",
+  "savory": ["Oatmeal", "Avocado Toast", "Omelette", "Salad"],
+  "Sweet": ["Cookie"]
 }
 ```
 
@@ -114,21 +119,14 @@ Location: {{host}}/Breakfasts/{{id}}
 
 ```json
 {
-    "id": "00000000-0000-0000-0000-000000000000",
-    "name": "Vegan Sunshine",
-    "description": "Vegan everything! Join us for a healthy breakfast..",
-    "startDateTime": "2022-04-08T08:00:00",
-    "endDateTime": "2022-04-08T11:00:00",
-    "lastModifiedDateTime": "2022-04-06T12:00:00",
-    "savory": [
-        "Oatmeal",
-        "Avocado Toast",
-        "Omelette",
-        "Salad"
-    ],
-    "Sweet": [
-        "Cookie"
-    ]
+  "id": "00000000-0000-0000-0000-000000000000",
+  "name": "Vegan Sunshine",
+  "description": "Vegan everything! Join us for a healthy breakfast..",
+  "startDateTime": "2022-04-08T08:00:00",
+  "endDateTime": "2022-04-08T11:00:00",
+  "lastModifiedDateTime": "2022-04-06T12:00:00",
+  "savory": ["Oatmeal", "Avocado Toast", "Omelette", "Salad"],
+  "Sweet": ["Cookie"]
 }
 ```
 
@@ -148,21 +146,14 @@ GET /breakfasts/{{id}}
 
 ```json
 {
-    "id": "00000000-0000-0000-0000-000000000000",
-    "name": "Vegan Sunshine",
-    "description": "Vegan everything! Join us for a healthy breakfast..",
-    "startDateTime": "2022-04-08T08:00:00",
-    "endDateTime": "2022-04-08T11:00:00",
-    "lastModifiedDateTime": "2022-04-06T12:00:00",
-    "savory": [
-        "Oatmeal",
-        "Avocado Toast",
-        "Omelette",
-        "Salad"
-    ],
-    "Sweet": [
-        "Cookie"
-    ]
+  "id": "00000000-0000-0000-0000-000000000000",
+  "name": "Vegan Sunshine",
+  "description": "Vegan everything! Join us for a healthy breakfast..",
+  "startDateTime": "2022-04-08T08:00:00",
+  "endDateTime": "2022-04-08T11:00:00",
+  "lastModifiedDateTime": "2022-04-06T12:00:00",
+  "savory": ["Oatmeal", "Avocado Toast", "Omelette", "Salad"],
+  "Sweet": ["Cookie"]
 }
 ```
 
@@ -176,19 +167,12 @@ PUT /breakfasts/{{id}}
 
 ```json
 {
-    "name": "Vegan Sunshine",
-    "description": "Vegan everything! Join us for a healthy breakfast..",
-    "startDateTime": "2022-04-08T08:00:00",
-    "endDateTime": "2022-04-08T11:00:00",
-    "savory": [
-        "Oatmeal",
-        "Avocado Toast",
-        "Omelette",
-        "Salad"
-    ],
-    "Sweet": [
-        "Cookie"
-    ]
+  "name": "Vegan Sunshine",
+  "description": "Vegan everything! Join us for a healthy breakfast..",
+  "startDateTime": "2022-04-08T08:00:00",
+  "endDateTime": "2022-04-08T11:00:00",
+  "savory": ["Oatmeal", "Avocado Toast", "Omelette", "Salad"],
+  "Sweet": ["Cookie"]
 }
 ```
 
